@@ -117,15 +117,15 @@ const addEvents = (tabObj) => {
 
 // Iterate over links to initialise functionality
 const initMegaMenu = () => {
-	links.forEach((link, index) => {
-		const tabObj = getTabObject(link);
-		setupAria(tabObj, index);
-		addEvents(tabObj);
-		// Hide tab by default
-		hideContent(tabObj);
-		// Display tab if it matches querystring
-		showContentIfUrlMatch(tabObj);
-	});
+  links.forEach((link, index) => {
+    const tabObj = getTabObject(link);
+    setupAria(tabObj, index);
+    addEvents(tabObj);
+    // Hide tab by default
+    hideContent(tabObj);
+    // Display tab if it matches querystring
+    showContentIfUrlMatch(tabObj);
+  });
 }
 
 // Initialise on DOMContentLoaded
